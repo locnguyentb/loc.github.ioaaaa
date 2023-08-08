@@ -42,7 +42,7 @@
     <script>
         // Hàm này gọi hàm Android để xử lý sự kiện nhấn nút "Close"
         function onCloseButtonClicked() {
-            Android.onCloseButtonClicked();
+             webkit.messageHandlers.close.postMessage("");
         }
     </script>
 
@@ -50,7 +50,7 @@
         /* Định nghĩa các thuộc tính cho lớp custom-button */
         .custom-button {
             font-size: 18px; /* Kích thước chữ của nút */
-            padding: 10px 20px; /* Đệm xung quanh nút (top right bottom left) */
+            padding: 50px 50px; /* Đệm xung quanh nút (top right bottom left) */
             background-color: #ff0000; /* Màu nền của nút */
             color: #ffffff; /* Màu chữ của nút */
             border: none; /* Bỏ viền của nút */
