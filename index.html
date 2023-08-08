@@ -37,14 +37,14 @@
            <h1><a href="wakuwaku://wakapp.jp/launcher/xxxx/yyyy">lauchTest</a></h1>
         <h1><a href="wakuwaku://wakapp.jp/webview/doc/rule.html?p=2">Test RULE</a></h1>
         <h1><a href="wakuwaku://wakapp.jp/webview/doc/rule.html?p=20">Test RULE20</a></h1>
-       <button class="custom-button" onclick="onCloseButtonClicked()">Close</button>
+       <button class="custom-button"onClick="showAndroidToast('Hello Android!')">Close</button>
 
-    <script>
-        // Hàm này gọi hàm Android để xử lý sự kiện nhấn nút "Close"
-        function onCloseButtonClicked() {
-             webkit.messageHandlers.close.postMessage("");
-        }
-    </script>
+   <script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+</script>
+
 
     <style>
         /* Định nghĩa các thuộc tính cho lớp custom-button */
