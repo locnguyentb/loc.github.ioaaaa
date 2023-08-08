@@ -1,64 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1><a href="wakuwaku://wakapp.jp/launcher">アプリ起動</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/bbs_post">募集投稿</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/smile">スマイル一覧</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/footprint">足あと一覧</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/bbs_history">募集履歴</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/favorite">お気に入り</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/memo">メモ</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/block_list">ブロックリスト </a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/community">コミュニティ</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/settings">設定画面</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/profile_settings">プロフィール編集</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/notification_settings">通知設定</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/purchase">ポイント購入</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/usage_fee">料金案内</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/information">お知らせ</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/age_verification">年齢確認</a></h1>
-          <h1><a href="wakuwaku://wakapp.jp/security">セキュリティ</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/login_history">ログイン履歴</a></h1>
-         <h1><a href="">---Webview----</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/webview/doc/rule.html?p=1">利用規約</a></h1>
-          <h1><a href="wakuwaku://wakapp.jp/webview/doc/policy.html">プライバシーポリシー</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/webview/page=wallet">モバイラーズ案内</a></h1>
-          <h1><a href="wakuwaku://wakapp.jp/webview/page=class">クラス案内</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/webview/page=mailbegin_hint">女性へのメール攻略法</a></h1>
-          <h1><a href="wakuwaku://wakapp.jp/webview/page=set_profile_smile">スマイル受付設定</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/webview/bbs_notification_list">募集通知</a></h1>
-          <h1><a href="wakuwaku://wakapp.jp/webview/n/reminder/menu">ログインできない方はこちら</a></h1>
-        <h1><a href="">---Fragment----</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/main/search_profile_photo">プロフ検索 (写真で表示)</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/main/bbs">募集一覧 </a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/main/iikamo">いいかも!一覧</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/main/mail_list">メールボックス</a></h1>
-         <h1><a href="wakuwaku://wakapp.jp/main/mypage">マイページ </a></h1>
-           <h1><a href="wakuwaku://wakapp.jp/launcher/xxxx/yyyy">lauchTest</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/webview/doc/rule.html?p=2">Test RULE</a></h1>
-        <h1><a href="wakuwaku://wakapp.jp/webview/doc/rule.html?p=20">Test RULE20</a></h1>
-       <button class="custom-button"onClick="showAndroidToast('Hello Android!')">Close</button>
-
-   <script type="text/javascript">
-    function showAndroidToast(toast) {
-        Android.showToast(toast);
-    }
-</script>
-
-
-    <style>
-        /* Định nghĩa các thuộc tính cho lớp custom-button */
-        .custom-button {
-            font-size: 18px; /* Kích thước chữ của nút */
-            padding: 50px 50px; /* Đệm xung quanh nút (top right bottom left) */
-            background-color: #ff0000; /* Màu nền của nút */
-            color: #ffffff; /* Màu chữ của nút */
-            border: none; /* Bỏ viền của nút */
-            border-radius: 8px; /* Bo tròn góc của nút */
-            cursor: pointer; /* Biểu tượng con trỏ chuột khi hover vào nút */
-        }
-    
-
-    </body>
-</html>
+    <html>
+   <body bgcolor="red">
+      <center>
+         <br/>
+         <input id="fname" type="text" placeholder="enter your name"/>
+         <br/>
+         <br/>
+         <input id="pswd" type="text" placeholder=" password"/>
+         <br/>
+         <br/>
+         <button onclick="msg();">onclick</button>
+      </center>
+   </body>
+   <script>
+      function msg(){
+       
+          var fname=document.getElementById("fname").value;
+          var pswd=document.getElementById("pswd").value;
+       
+          // Dialog is javascript interface name
+          // mentioned in Mainactivity.Java
+          Dialog.showMsg(fname,pswd);
+          }
+       
+       
+   </script>
 </html>
