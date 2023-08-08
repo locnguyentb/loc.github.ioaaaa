@@ -10,6 +10,8 @@
          <br/>
          <br/>
          <button onclick="msg();">onclick</button>
+              <br/>
+          <button onclick="onCloseButtonClicked()">Close</button>
       </center>
    </body>
    <script>
@@ -22,6 +24,10 @@
           // mentioned in Mainactivity.Java
           Dialog.showMsg(fname,pswd);
           }
+        function onCloseButtonClicked() {
+            webkit.messageHandlers.close.postMessage("");
+        }
+       
        
        
    </script>
