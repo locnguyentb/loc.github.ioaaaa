@@ -11,7 +11,9 @@
          <br/>
          <button onclick="msg();">onclick</button>
               <br/>
-          <button onclick="onCloseButtonClicked()">Close</button>
+           <br/>
+           <br/>
+          <button onclick="goBack();">Back</button>
       </center>
    </body>
    <script>
@@ -24,9 +26,10 @@
           // mentioned in Mainactivity.Java
           Android.showMsg(fname,pswd);
           }
-        function onCloseButtonClicked() {
-            webkit.messageHandlers.close.postMessage("");
-        }
+         function goBack() {
+        // Go back to the previous page in the WebView
+        window.history.back();
+    }
        
        
        
