@@ -16,22 +16,7 @@
           <button onclick="goBack();">Back</button>
       </center>
    </body>
-   <script>
-      function msg(){
-       
-          var fname=document.getElementById("fname").value;
-          var pswd=document.getElementById("pswd").value;
-       
-          // Dialog is javascript interface name
-          // mentioned in Mainactivity.Java
-          Dialog.showMsg(fname,pswd);
-          }
-         function goBack() {
-        // Go back to the previous page in the WebView
-      Android.finishActivity();
+    function movetoscreen() {
+        android.movetonextscreen();
     }
-       
-       
-       
-   </script>
 </html>
